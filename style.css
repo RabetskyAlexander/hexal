@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'lato-regular';
+    src: url('assets/font/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'lato-bold';
+    src: url('assets/font/LatoBold.ttf');
+}
+@font-face {
+    font-family: 'MavenPro-Regular';
+    src: url('assets/font/MavenPro-Regular.ttf');
+}
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('assets/font/MyriadPro-Regular;.otf');
+}
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('assets/font/Lato-Black.ttf');
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    width: 1020px;
+    margin: 0 auto;
+
+}
+header {
+    margin: 0 auto;
+    position: relative;
+    background: #323232;
+    height: 63px;
+    position: relative;
+}
+li {
+    text-decoration: none;    
+    color: #fff;
+    display: inline;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    font-family: 'lato-bold', 'MavenPro-Regular';
+    font-size: 8pt;
+    color: #fff;
+}
+.point {
+    background: #484c5f;
+    width: 1px;
+    height: 1px;
+    border: #484c5f 1px solid;
+    border-radius: 1px;
+}
+.menu {
+    position: absolute;
+    left: 512px;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu li{
+    position: relative;
+    margin: 0 10px;
+    letter-spacing: -0.5px;
+    top: -4px;
+}
+
+.menu li a:hover{
+    color:#2eb398;
+}
+
+.logo {
+    margin: 0 26px 0 26px;
+}
+.selected {
+    color:#2eb398;
+}
+.hexagon-container {
+    height: 722px;
+
+}
+.hexagon {
+    width: 180px;
+    height: 209px;
+    background: #cccc;
+    margin: 8px;
+    transform: rotate(60deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+.hex-layer-1 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(60deg);
+    background: #cccc;
+    overflow: hidden;
+
+}
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(240deg);
+    background: #cccc;
+    overflow: hidden;   
+    visibility: visible;
+}
+.hex-row-1 .hexagon{
+    position: relative;
+    top:81px;
+    left: 112px;
+}
+.hex-row-2 .hexagon{
+    position: relative;
+    top: 23px;
+    left: 13px;
+}
+.hex-row-3 .hexagon{
+    position: relative;
+    top: -36px;
+    left: 112px;
+}
+
+.info {
+    position: relative;
+    margin: 0 auto;
+    width: 1020px;
+    height: 341px;
+    background: #2eb398;
+}
+.info-box {
+    border-left: #219d84 1px solid;
+    border-right: #219d84 1px solid;
+    display: inline-block;
+    position: relative;
+    width: 820px;
+    height: 316px;
+    top: 13px;
+    left: 13px;
+    margin: 0 87px 0 87px;
+}
+.info .hexagon {
+    display: inline-block;
+    position: relative;
+    left: 13px;
+    top: 46px;
+}
+.description {
+    position: relative;
+    display: inline-block;
+    top: 28px;
+    left: 25px;
+    width: 574px;
+}
+.info-img{
+    position: relative;
+    left: -120px;
+}
+
+.description h1 {
+    font-family: 'MyriadPro-Regular', 'MavenPro-Regular';
+    font-size: 30px;
+    color: rgba(215, 252, 245, 255);
+    margin-bottom: 1px;
+    position: relative;
+    top: -36px;
+    left: -7px;
+    letter-spacing: 0.8px;
+
+}
+.description h2 {
+    font-family: 'MyriadPro-Regular', 'MavenPro-Regular';
+    font-size: 18px;
+    color:  rgba(32, 129, 109, 255);
+    margin: 0;
+    position: relative;
+    top: -34px;
+    left: -7px;
+    letter-spacing: 0.6px;
+
+}
+.description p {
+    font-family: 'lato-regular', 'MavenPro-Regular';
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+    margin-top: 47px;
+    position: relative;
+    top: -62px;
+    left: -5px;
+    text-align: justify;
+    letter-spacing: -0.15px;
+    line-height:1.6;
+}
+.social-link{
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: -3px;
+}
+.social-link img {
+    margin: 0;
+    float: left;
+    float: left;
+    filter: invert(100%) grayscale(100%) brightness(200%);
+    opacity: 0.3;
+}
+
+.social-link img:hover{
+    filter: none;
+    opacity: 1;
+}
+.get-in-touch {
+    position: relative;
+    width: 1020px;
+    background: #323232;
+    height: 563px;
+}
+.get-in-touch-legend {
+    position: relative;
+    top: 60px;
+    font-family: 'MyriadPro-Regular', 'MavenPro-Regular';
+    font-size: 18px;
+    color: rgba(190, 190, 190, 255);
+    line-height: 1.1;
+    letter-spacing: 0.7px;
+
+}
+.get-in-touch-legend span{
+    font-size: 30px;
+    letter-spacing: 1.45px;
+    color: rgba(224, 224, 224, 255);
+
+
+}
+.get-in-touch-fieldset {
+    position: relative;
+    display: block;
+    width: 580px;
+}
+.get-in-touch form {
+    display: inline-block;
+    width: 580px;
+    position: relative;
+    margin: 0 auto 0 120px;
+}
+input{
+    position: relative;
+    margin: 0 0 16px 0;
+    top: 81px;
+    width: 100%;
+    height: 36px;
+    background: #454545;
+    border: none;
+}
+input::placeholder{
+    padding: 14px;
+    font-family: 'lato-regular', 'MyriadPro-Regular';
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+}
+textarea{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 80px;
+    width: 580px;
+    height: 150px;
+    background: #454545;
+    border: none;
+    resize: none;
+}
+textarea::placeholder{
+    padding: 12px 14px;
+    font-family: 'lato-regular', 'MyriadPro-Regular';
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+}
+.submit-btn{
+    padding: 0;
+    position: relative;
+    top: 95px;
+    float: right;
+    width: 90px;
+    height: 36px;
+    background: #2eb398;
+    border: none;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+}
+.contact-info{
+    position: absolute;
+    display: inline-block;
+    top: 127px;
+    margin: 0 20px;
+    width: 180px;
+    height: 314px;
+    font-family: 'lato-regular','MyriadPro-Regular';
+    font-size: 12px;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+    line-height: 1.84;
+}
+.bolt {
+    font-family: 'Lato-Black';
+}
+.contact li{
+    display: inline-block;
+    font-family: 'lato-bold','MyriadPro-Regular';
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    letter-spacing: -0.2px;
+}
+.contact-img {
+    position: absolute;
+    display: inline-block;
+    top: 294px;
+    width: 10px;
+    margin: 0 21px;
+    line-height: 1.3;
+}
+.contact {
+    display: inline-block;
+    width: 160px;
+    position: absolute;
+    top: 290px;
+    margin: 0px 44px;
+    line-height: 1.4;
+
+}
+footer{
+    background: #222222;
+    height: 43px;
+    font-family: 'MyriadPro-Regular', 'MavenPro-Regular';
+    font-size: 12px;
+    color: rgba(69, 69, 69, 255);
+}
+footer p{
+    position: relative;
+    top: 14px;
+    left: 39px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 11px;
+    color: rgba(69, 69, 69, 255);
+}
